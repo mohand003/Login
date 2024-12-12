@@ -70,7 +70,7 @@ function login() {
         if (signUpArray[i].email.toLowerCase() === email.toLowerCase() && signUpArray[i].password === password) {
             localStorage.setItem('sessionUsername', signUpArray[i].name);
 
-            if (baseURL === '/') {
+            if (baseURL === './index.html') {
                 location.replace('https://' + location.hostname + './home.html');
             } else {
                 location.replace(baseURL + './home.html');
